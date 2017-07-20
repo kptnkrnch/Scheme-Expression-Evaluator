@@ -1,3 +1,5 @@
+;; This Environment was implemented using a list structure for storing bindings
+;; Bindings are stored as a list like: (v val)
 (define make-empty-env
 	(lambda ()
 		(list) ;; creates an empty environment as a list

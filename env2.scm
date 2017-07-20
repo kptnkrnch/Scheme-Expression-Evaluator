@@ -1,3 +1,6 @@
+;; This environment was implemented using closures
+;; extend-env returns a closure where if a variable name is passed to it, if that variable name equals the variable stored in the closure
+;; the value bound to that variable is returned. otherwise, it executes the next closure using the passed in variable name and attempts the same procedure.
 (define (make-empty-env) 
     (lambda (x)
         (error "apply-env: unable to find variable" x) ;; the empty environment is the last function evaluated.
